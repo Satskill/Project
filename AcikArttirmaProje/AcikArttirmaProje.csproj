@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B28D050E-E114-49A1-8434-1DADB868DC96}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AcikArttirmaProje</RootNamespace>
+    <AssemblyName>AcikArttirmaProje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli.Designer.cs">
+      <DependentUpon>AdminPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adresim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adresim.Designer.cs">
+      <DependentUpon>Adresim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Baglanti.cs" />
+    <Compile Include="EsyaDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EsyaDetay.Designer.cs">
+      <DependentUpon>EsyaDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EsyaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EsyaEkle.Designer.cs">
+      <DependentUpon>EsyaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Esyalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Esyalar.Designer.cs">
+      <DependentUpon>Esyalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Esyalarim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Esyalarim.Designer.cs">
+      <DependentUpon>Esyalarim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EsyaList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EsyaList.Designer.cs">
+      <DependentUpon>EsyaList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisYap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisYap.Designer.cs">
+      <DependentUpon>GirisYap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kartlarim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kartlarim.Designer.cs">
+      <DependentUpon>Kartlarim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitOl.Designer.cs">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profilim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profilim.Designer.cs">
+      <DependentUpon>Profilim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resimleme.cs" />
+    <Compile Include="SatinAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatinAl.Designer.cs">
+      <DependentUpon>SatinAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatisGerceklestir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatisGerceklestir.Designer.cs">
+      <DependentUpon>SatisGerceklestir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Satislarim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satislarim.Designer.cs">
+      <DependentUpon>Satislarim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifreUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreUnuttum.Designer.cs">
+      <DependentUpon>SifreUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Liste.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Liste.Designer.cs">
+      <DependentUpon>Liste.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPaneli.resx">
+      <DependentUpon>AdminPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adresim.resx">
+      <DependentUpon>Adresim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EsyaDetay.resx">
+      <DependentUpon>EsyaDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EsyaEkle.resx">
+      <DependentUpon>EsyaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Esyalar.resx">
+      <DependentUpon>Esyalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Esyalarim.resx">
+      <DependentUpon>Esyalarim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EsyaList.resx">
+      <DependentUpon>EsyaList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisYap.resx">
+      <DependentUpon>GirisYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kartlarim.resx">
+      <DependentUpon>Kartlarim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitOl.resx">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profilim.resx">
+      <DependentUpon>Profilim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatinAl.resx">
+      <DependentUpon>SatinAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatisGerceklestir.resx">
+      <DependentUpon>SatisGerceklestir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satislarim.resx">
+      <DependentUpon>Satislarim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifreUnuttum.resx">
+      <DependentUpon>SifreUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liste.resx">
+      <DependentUpon>Liste.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon\Başlıksız-1.png" />
+    <Content Include="icon\icons8_debit_card_32px.png" />
+    <Content Include="icon\icons8_delete_32px.png" />
+    <Content Include="icon\icons8_delete_32px_1.png" />
+    <Content Include="icon\icons8_documents_64px.png" />
+    <Content Include="icon\icons8_exit_24px.png" />
+    <Content Include="icon\icons8_exit_48px_2.png" />
+    <Content Include="icon\icons8_eye_32px_3.png" />
+    <Content Include="icon\icons8_eye_32px_4.png" />
+    <Content Include="icon\icons8_location_32px_1.png" />
+    <Content Include="icon\icons8_more_details_32px.png" />
+    <Content Include="icon\icons8_more_details_32px_1.png" />
+    <Content Include="icon\icons8_product_32px_1.png" />
+    <Content Include="icon\icons8_product_64px.png" />
+    <Content Include="icon\icons8_save_32px.png" />
+    <Content Include="icon\icons8_save_32px_5.png" />
+    <Content Include="icon\icons8_save_64px_4.png" />
+    <Content Include="icon\icons8_shopping_cart_32px.png" />
+    <Content Include="icon\icons8_shopping_cart_64px.png" />
+    <Content Include="icon\icons8_update_user_32px_9.png" />
+    <Content Include="Properties\icons8_update_user_32px_9.png" />
+    <None Include="icon\icons8_trash_32px_3.png" />
+    <Content Include="icon\icons8_update_32px_1.png" />
+    <Content Include="icon\icons8_user_32px.png" />
+    <Content Include="icon\icons8_user_64px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
